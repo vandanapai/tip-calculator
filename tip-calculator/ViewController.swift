@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var stepperValue: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var totalppLabel: UILabel!
@@ -25,6 +24,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        [billField .becomeFirstResponder()]
         
         stepper.wraps = true
         stepper.autorepeat = true
@@ -55,11 +57,11 @@ class ViewController: UIViewController {
     
     @IBAction func calculateTip(sender: AnyObject) {
         
-        let tipPercentages = [0.15, 0.18, 0.2]
+        let tipPercentage = ((tipStepper.value)/100) ?? 0
         
         let bill = Double(billField.text!) ?? 0
         let splitNum = Double(stepper.value) ?? 0
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        let tip = bill * tipPercentage
         let total = bill + tip
         let totalPerPerson = total / splitNum
         
