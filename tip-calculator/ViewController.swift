@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepperValue: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var totalppLabel: UILabel!
+    @IBOutlet weak var tipValue: UILabel!
+    @IBOutlet weak var tipStepper: UIStepper!
 
 
     override func viewDidLoad() {
@@ -44,6 +46,12 @@ class ViewController: UIViewController {
         stepperValue.text = Int(stepper.value).description
     }
 
+    @IBAction func tipStepperValueChanged(sender: AnyObject) {
+        let tipLabelValue = tipStepper.value
+        tipValue.text = Int(tipStepper.value).description
+        tipValue.text = String(format: "%.0f%%",tipLabelValue)
+
+    }
     
     @IBAction func calculateTip(sender: AnyObject) {
         
@@ -51,7 +59,6 @@ class ViewController: UIViewController {
         
         let bill = Double(billField.text!) ?? 0
         let splitNum = Double(stepper.value) ?? 0
-        print(stepper.value)
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         let totalPerPerson = total / splitNum
@@ -61,7 +68,6 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
         totalppLabel.text = String(format: "$%.2f", totalPerPerson)
-
         
     }
 
