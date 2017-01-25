@@ -28,10 +28,15 @@ class ViewController: UIViewController {
         
         [billField .becomeFirstResponder()]
         
+
+        view.backgroundColor = UIColor.grayColor()
+        
         stepper.wraps = true
         stepper.autorepeat = true
         stepper.maximumValue = 20
+        
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
