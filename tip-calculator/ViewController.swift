@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalppLabel: UILabel!
     @IBOutlet weak var tipValue: UILabel!
     @IBOutlet weak var tipStepper: UIStepper!
-
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +28,13 @@ class ViewController: UIViewController {
         
         [billField .becomeFirstResponder()]
         
-
-        view.backgroundColor = UIColor.grayColor()
-        
         stepper.wraps = true
         stepper.autorepeat = true
         stepper.maximumValue = 20
+
         
     }
+
 
 
     override func didReceiveMemoryWarning() {

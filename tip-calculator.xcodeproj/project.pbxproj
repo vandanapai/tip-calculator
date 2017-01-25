@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C35254B41E3822BC00EE03AB /* Aileron-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C35254B21E3822BC00EE03AB /* Aileron-Bold.otf */; settings = {ASSET_TAGS = (); }; };
-		C35254B51E3822BC00EE03AB /* Aileron-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C35254B31E3822BC00EE03AB /* Aileron-Thin.otf */; settings = {ASSET_TAGS = (); }; };
+		C351EF5D1E383F79008063B7 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C351EF591E383F79008063B7 /* Lato-Black.ttf */; settings = {ASSET_TAGS = (); }; };
+		C351EF5E1E383F79008063B7 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C351EF5A1E383F79008063B7 /* Lato-Bold.ttf */; settings = {ASSET_TAGS = (); }; };
+		C351EF5F1E383F79008063B7 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C351EF5B1E383F79008063B7 /* Lato-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
+		C351EF601E383F79008063B7 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C351EF5C1E383F79008063B7 /* Lato-Thin.ttf */; settings = {ASSET_TAGS = (); }; };
 		C37258E31E2DD0DC00A4A7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37258E21E2DD0DC00A4A7B0 /* AppDelegate.swift */; };
 		C37258E51E2DD0DC00A4A7B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37258E41E2DD0DC00A4A7B0 /* ViewController.swift */; };
 		C37258E81E2DD0DC00A4A7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37258E61E2DD0DC00A4A7B0 /* Main.storyboard */; };
@@ -36,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C35254B21E3822BC00EE03AB /* Aileron-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Bold.otf"; path = "../../../../Fonts/aileron/Aileron-Bold.otf"; sourceTree = "<group>"; };
-		C35254B31E3822BC00EE03AB /* Aileron-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Thin.otf"; path = "../../../../Fonts/aileron/Aileron-Thin.otf"; sourceTree = "<group>"; };
+		C351EF591E383F79008063B7 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../../../Fonts/lato/Lato-Black.ttf"; sourceTree = "<group>"; };
+		C351EF5A1E383F79008063B7 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../Fonts/lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		C351EF5B1E383F79008063B7 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../Fonts/lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C351EF5C1E383F79008063B7 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../../../../Fonts/lato/Lato-Thin.ttf"; sourceTree = "<group>"; };
 		C37258DF1E2DD0DC00A4A7B0 /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37258E21E2DD0DC00A4A7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37258E41E2DD0DC00A4A7B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,8 +85,10 @@
 		C35254AF1E38220200EE03AB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C35254B21E3822BC00EE03AB /* Aileron-Bold.otf */,
-				C35254B31E3822BC00EE03AB /* Aileron-Thin.otf */,
+				C351EF591E383F79008063B7 /* Lato-Black.ttf */,
+				C351EF5A1E383F79008063B7 /* Lato-Bold.ttf */,
+				C351EF5B1E383F79008063B7 /* Lato-Regular.ttf */,
+				C351EF5C1E383F79008063B7 /* Lato-Thin.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -242,11 +248,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C351EF5E1E383F79008063B7 /* Lato-Bold.ttf in Resources */,
+				C351EF601E383F79008063B7 /* Lato-Thin.ttf in Resources */,
 				C37258ED1E2DD0DC00A4A7B0 /* LaunchScreen.storyboard in Resources */,
 				C37258EA1E2DD0DC00A4A7B0 /* Assets.xcassets in Resources */,
-				C35254B51E3822BC00EE03AB /* Aileron-Thin.otf in Resources */,
+				C351EF5F1E383F79008063B7 /* Lato-Regular.ttf in Resources */,
 				C37258E81E2DD0DC00A4A7B0 /* Main.storyboard in Resources */,
-				C35254B41E3822BC00EE03AB /* Aileron-Bold.otf in Resources */,
+				C351EF5D1E383F79008063B7 /* Lato-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
