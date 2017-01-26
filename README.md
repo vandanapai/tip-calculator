@@ -31,7 +31,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+* Currently still working on the app. I want to add a custom theme so I can change the appearance of the stepper buttons. Also working on adding UI animations, and possibly adding a default tip percentage option. 
+* Understanding the Swift syntax (very different from other languages I've used) and simply navigating Xcode and understanding all of the components has been challenging.
+* There are many minute details to creating an app that I had not though of before, and I think it will be an interesting challenge to uncover all of these and try to solve these problems. I'm very used to web development so this is a very different way of creating something.
 
 ## License
 
