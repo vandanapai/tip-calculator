@@ -21,10 +21,12 @@
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
+            <string>Lato-Thin</string>
+            <string>Lato-Thin</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Tip Calculator-->
+        <!--Tippy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tip_calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL AMOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wB5-cT-oWn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wB5-cT-oWn">
                                 <rect key="frame" x="20" y="77" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -102,7 +104,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c4Q-cV-1p4">
-                                <rect key="frame" x="23" y="367" width="78" height="21"/>
+                                <rect key="frame" x="23" y="401" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="13"/>
@@ -110,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K2a-2u-KsT">
-                                <rect key="frame" x="23" y="416" width="86" height="21"/>
+                                <rect key="frame" x="23" y="372" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="13"/>
@@ -118,7 +120,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PBv-Ni-pni">
-                                <rect key="frame" x="212" y="367" width="91" height="21"/>
+                                <rect key="frame" x="212" y="401" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="0.99607843159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bc6-hD-wWI">
+                                <rect key="frame" x="212" y="430" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="13"/>
@@ -126,29 +136,49 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAE-Ea-W2R">
-                                <rect key="frame" x="212" y="416" width="91" height="21"/>
+                                <rect key="frame" x="212" y="372" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL PER PERSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bv1-WG-cSq">
-                                <rect key="frame" x="23" y="299" width="156" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL PER PERSON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bv1-WG-cSq">
+                                <rect key="frame" x="-80" y="269" width="321" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hvE-ro-XSc">
-                                <rect key="frame" x="107" y="287" width="196" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hvE-ro-XSc">
+                                <rect key="frame" x="163" y="269" width="157" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="0.99607843159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP PER PERSON" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xOE-a6-wpe">
+                                <rect key="frame" x="23" y="430" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="0.99607843159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="43A-60-SvW">
+                                <rect key="frame" x="0.0" y="269" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.53616823186528495" green="0.27563730123605662" blue="0.53198342542859978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="ZdM-Pd-rJF">
+                                <rect key="frame" x="0.0" y="356" width="320" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.62793474739999999" green="0.32418840090000001" blue="0.6198671966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.68724662367158862" blue="0.68705234272151183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -157,15 +187,18 @@
                             <outletCollection property="gestureRecognizers" destination="9hG-Us-ZLX" appends="YES" id="LUg-QI-xet"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="LFv-da-vqE"/>
+                    <navigationItem key="navigationItem" title="Tippy" id="LFv-da-vqE"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="billField" destination="Fer-ZM-IYT" id="jBf-oH-LmT"/>
                         <outlet property="stepper" destination="g7P-h1-I2e" id="NmF-5U-RV7"/>
                         <outlet property="stepperValue" destination="IyH-19-o4d" id="QcZ-op-qXd"/>
                         <outlet property="tipLabel" destination="PBv-Ni-pni" id="t2W-pi-z89"/>
+                        <outlet property="tipPersonLabel" destination="bc6-hD-wWI" id="vZr-J4-JA2"/>
                         <outlet property="tipStepper" destination="dJS-Rv-POs" id="IxJ-Xl-RTM"/>
                         <outlet property="tipValue" destination="g8r-HI-1O4" id="MSE-2k-a6c"/>
+                        <outlet property="total2BG" destination="ZdM-Pd-rJF" id="sGv-26-Y7A"/>
+                        <outlet property="totalBG" destination="43A-60-SvW" id="5M2-PU-ZnT"/>
                         <outlet property="totalLabel" destination="vAE-Ea-W2R" id="gPw-wm-fOu"/>
                         <outlet property="totalppLabel" destination="hvE-ro-XSc" id="Ryn-Oj-8lM"/>
                     </connections>

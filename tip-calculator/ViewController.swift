@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalppLabel: UILabel!
     @IBOutlet weak var tipValue: UILabel!
     @IBOutlet weak var tipStepper: UIStepper!
+    @IBOutlet weak var tipPersonLabel: UILabel!
+    @IBOutlet weak var totalBG: UIView!
+    @IBOutlet weak var total2BG: UIView!
     
 
     override func viewDidLoad() {
@@ -31,6 +34,10 @@ class ViewController: UIViewController {
         stepper.wraps = true
         stepper.autorepeat = true
         stepper.maximumValue = 20
+        
+
+        self.view.sendSubviewToBack(totalBG)
+        self.view.sendSubviewToBack(total2BG)
 
         
     }
@@ -58,6 +65,7 @@ class ViewController: UIViewController {
         tipValue.text = String(format: "%.0f%%",tipLabelValue)
 
     }
+
     
     @IBAction func calculateTip(sender: AnyObject) {
         
@@ -66,13 +74,14 @@ class ViewController: UIViewController {
         let bill = Double(billField.text!) ?? 0
         let splitNum = Double(stepper.value) ?? 0
         let tip = bill * tipPercentage
+        let tipPerPerson = tip / splitNum
         let total = bill + tip
         let totalPerPerson = total / splitNum
         
         
-        
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        tipPersonLabel.text = String(format: "$%.2f", tipPerPerson)
         totalppLabel.text = String(format: "$%.2f", totalPerPerson)
         
     }
