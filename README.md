@@ -15,18 +15,17 @@ The following **optional** features are implemented:
 * [x] Custom font
 * [ ] UI animations
 * [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
-* [x] User can calculate how much splitting the bill will cost.
-* [x] User can select any tip percentage.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+* [x] User can calculate how much splitting the bill will cost.
+* [x] User can select any tip percentage.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<a href="/course_images/ios_for_designers/name%20of%20your%20file%20in%20the%20repo.gif" target="_blank"><img src='/course_images/ios_for_designers/name%20of%20your%20file%20in%20the%20repo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
+![video walkthrough](video-walkthrough/tippy-video-1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -36,7 +35,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2017 Vandana Pai
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
